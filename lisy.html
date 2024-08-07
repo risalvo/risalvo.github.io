@@ -10,24 +10,34 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="container">
+            <div class="logo">
                 <span>ns</span>
             </div>
-             <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html#sobremi">Sobre mí</a></li>
-                 <li><a href="index.html#proyectos">Proyectos</a></li>
-                 <li><a href="index.html#contacto">Contacto</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="main.html#sobremi">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Proyectos</a>
+                    <div class="dropdown-content">
+                        <a href="komvous.html">Komvous</a>
+                        <a href="emilia.html">Emilia</a>
+                        <a href="dilab.html">Dilab</a>
+                        <a href="lisy.html">Lisy</a>
+                    </div>
+                </li>
+                <li><a href="main.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <index.html class="indeep">
-        <!-- Your index.html content goes here -->
+    <main class="indeep container">
         <section class="proyectcontent">
             <h2>The Lisy</h2>
-            <h3>The Lisy es una plataforma web integral de gestión logística diseñada para optimizar y agilizar las operaciones de coordinación de carga entre empresas. A través de una interfaz intuitiva y herramientas especializadas, Lisy simplifica la programación de envíos, proporciona visibilidad en tiempo real sobre el estado de las cargas y mejora la colaboración entre los diferentes actores de la cadena de suministro. </h3>
+            <h3>The Lisy es una plataforma web integral de gestión logística diseñada para optimizar y agilizar las operaciones de coordinación de carga entre empresas. A través de una interfaz intuitiva y herramientas especializadas, Lisy simplifica la programación de envíos, proporciona visibilidad en tiempo real sobre el estado de las cargas y mejora la colaboración entre los diferentes actores de la cadena de suministro.</h3>
             <div class="Objetivos">
                 <h4>Objetivos</h4>
                 <ul>
@@ -36,97 +46,102 @@
                     <li>Mejorar la gestión de horarios de envío.</li>
                 </ul>
             </div>
-            
         </section>
 
         <section class="bannerproyecto">
-            <img src="Assets/bannerlisy.png" alt="Placeholder image">
+            <img src="Assets/bannerlisy.png" alt="Banner del proyecto The Lisy" onclick="openImageModal(this)">
         </section>
 
-
         <section class="process">
-           <div class="top">
+            <div class="top">
                 <h5>Blueprints</h5>
                 <h3>Se crearon blueprints para definir la estructura y el flujo general de la plataforma. Los blueprints ayudaron a visualizar y planificar todos los componentes y su interacción dentro del sistema, asegurando una visión integral antes de profundizar en detalles específicos.</h3>
             </div>
-            <div class="image"> 
-                <img src="Assets/blueprintlisy.png" alt="Placeholder image">
+            <div class="image">
+                <img src="Assets/blueprintlisy.png" alt="Blueprints" onclick="openImageModal(this)">
             </div>
         </section>
         <section class="process">
             <div class="top">
-                 <h5>Userflow</h5>
-                 <h3>Se desarrollaron mapas de flujo para representar visualmente cómo los usuarios navegarían por la plataforma. Estos mapas fueron esenciales para identificar posibles puntos de fricción y asegurar que la navegación fuera intuitiva y fluida.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lisyuserflow.png" alt="Placeholder image">
-             </div>
-         </section> 
-         <section class="process">
+                <h5>Userflow</h5>
+                <h3>Se desarrollaron mapas de flujo para representar visualmente cómo los usuarios navegarían por la plataforma. Estos mapas fueron esenciales para identificar posibles puntos de fricción y asegurar que la navegación fuera intuitiva y fluida.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lisyuserflow.png" alt="Userflow" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>User persona / User Journey</h5>
-                 <h3>Se crearon user personas basadas en investigaciones y entrevistas con usuarios potenciales. Las user personas ayudaron a enfocar el diseño en las necesidades y comportamientos de los usuarios reales, asegurando que las soluciones diseñadas fueran relevantes y útiles.
-                    Se delinearon user journeys para mapear las experiencias de los usuarios a lo largo de su interacción con la plataforma. Esto incluyó desde el primer contacto hasta la finalización de una tarea, identificando puntos clave donde la experiencia del usuario podría mejorarse.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lisyuser.png" alt="Placeholder image">
-             </div>
-         </section> 
-         <section class="process">
+                <h5>User persona / User Journey</h5>
+                <h3>Se crearon user personas basadas en investigaciones y entrevistas con usuarios potenciales. Las user personas ayudaron a enfocar el diseño en las necesidades y comportamientos de los usuarios reales, asegurando que las soluciones diseñadas fueran relevantes y útiles.
+                Se delinearon user journeys para mapear las experiencias de los usuarios a lo largo de su interacción con la plataforma. Esto incluyó desde el primer contacto hasta la finalización de una tarea, identificando puntos clave donde la experiencia del usuario podría mejorarse.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lisyuser.png" alt="User persona / User Journey" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5> Arquitectura de la información </h5>
-                 <h3>Se diseñó la arquitectura de la información para organizar el contenido y las funcionalidades de manera lógica y accesible. Este paso fue crucial para asegurar que los usuarios pudieran encontrar fácilmente la información y completar las tareas necesarias sin confusión.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lisyai.png" alt="Placeholder image">
-             </div>
-         </section>  
-         <section class="process">
+                <h5>Arquitectura de la información</h5>
+                <h3>Se diseñó la arquitectura de la información para organizar el contenido y las funcionalidades de manera lógica y accesible. Este paso fue crucial para asegurar que los usuarios pudieran encontrar fácilmente la información y completar las tareas necesarias sin confusión.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lisyai.png" alt="Arquitectura de la información" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Adaptación de una Librería de Diseño</h5>
-                 <h3>Se adaptó una librería de diseño existente a la identidad visual de The Lisy. Esta adaptación permitió asegurar consistencia en todos los elementos visuales de la plataforma, alineándolos con la identidad de marca de The Lisy. La librería de diseño proporcionó una base sólida y componentes reutilizables, lo que facilitó el desarrollo eficiente y coherente de la interfaz.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lissukit.png" alt="Placeholder image">
-             </div>
-         </section>  
-         <section class="process">
+                <h5>Adaptación de una Librería de Diseño</h5>
+                <h3>Se adaptó una librería de diseño existente a la identidad visual de The Lisy. Esta adaptación permitió asegurar consistencia en todos los elementos visuales de la plataforma, alineándolos con la identidad de marca de The Lisy. La librería de diseño proporcionó una base sólida y componentes reutilizables, lo que facilitó el desarrollo eficiente y coherente de la interfaz.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lissukit.png" alt="Adaptación de una Librería de Diseño" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Landing Page</h5>
-                 <h3>La landing page fue diseñada para captar la atención de los usuarios y proporcionar información clara y concisa sobre los servicios de The Lisy. Utilizando una combinación de imágenes atractivas, textos persuasivos y llamadas a la acción, la landing page está diseñada para convertir visitantes en usuarios registrados.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lisys page.png" alt="Placeholder image">
-             </div>
-         </section>   
-         <section class="process">
+                <h5>Landing Page</h5>
+                <h3>La landing page fue diseñada para captar la atención de los usuarios y proporcionar información clara y concisa sobre los servicios de The Lisy. Utilizando una combinación de imágenes atractivas, textos persuasivos y llamadas a la acción, la landing page está diseñada para convertir visitantes en usuarios registrados.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lisys page.png" alt="Landing Page" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Diseño de la Aplicación Web</h5>
-                 <h3>La aplicación web fue diseñada para facilitar la transferencia de carga entre empresas. La interfaz es intuitiva y eficiente, permitiendo a los usuarios agendar horarios, gestionar envíos y monitorear el estado de sus cargas con facilidad. Se implementaron características como notificaciones y recordatorios para mejorar la usabilidad y eficiencia del proceso.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/lisysapp.png" alt="Placeholder image">
-             </div>
-         </section>   
+                <h5>Diseño de la Aplicación Web</h5>
+                <h3>La aplicación web fue diseñada para facilitar la transferencia de carga entre empresas. La interfaz es intuitiva y eficiente, permitiendo a los usuarios agendar horarios, gestionar envíos y monitorear el estado de sus cargas con facilidad. Se implementaron características como notificaciones y recordatorios para mejorar la usabilidad y eficiencia del proceso.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/lisysapp.png" alt="Diseño de la Aplicación Web" onclick="openImageModal(this)">
+            </div>
+        </section>
 
-         <section class="contacto" id="contacto">
+        <section class="contacto" id="contacto">
             <h2 class="contacto">¿Trabajamos juntos?</h2>
             <h3 class="contacto"><a href="mailto:nsalvons@gmail.com">nsalvons@gmail.com</a></h3>
             <div class="botonessociales">
                 <a href="https://www.linkedin.com/in/risalvo/">
                     <button><i class="fab fa-linkedin"></i></button>
                 </a>
-                <button><i class="fab fa-behance"></i> </button>
-                <a href="https://www.linkedin.com/in/risalvo/">
-                    <button><i class="fab fa-instagram"></i> </button>
+                <button><i class="fab fa-behance"></i></button>
+                <a href="https://www.instagram.com">
+                    <button><i class="fab fa-instagram"></i></button>
                 </a>
             </div>
         </section>
-    </index.html>
+    </main>
 
     <footer>
         <!-- Your footer content goes here -->
     </footer>
+
+    <!-- Modal for image display -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

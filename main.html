@@ -10,15 +10,26 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="container">
+            <div class="logo">
                 <span>ns</span>
             </div>
-             <ul>
-                 <li><a href="main.html">Inicio</a></li>
-                 <li><a href="main.html#sobremi">Sobre mí</a></li>
-                 <li><a href="main.html#proyectos">Proyectos</a></li>
-                 <li><a href="main.html#contacto">Contacto</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="main.html#sobremi">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Proyectos</a>
+                    <div class="dropdown-content">
+                        <a href="komvous.html">Komvous</a>
+                        <a href="emilia.html">Emilia</a>
+                        <a href="dilab.html">Dilab</a>
+                        <a href="lisy.html">Lisy</a>
+                    </div>
+                </li>
+                <li><a href="main.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>

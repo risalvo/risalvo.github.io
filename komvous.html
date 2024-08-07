@@ -10,24 +10,34 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="container">
+            <div class="logo">
                 <span>ns</span>
             </div>
-             <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html#sobremi">Sobre mí</a></li>
-                 <li><a href="index.html#proyectos">Proyectos</a></li>
-                 <li><a href="index.html#contacto">Contacto</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="main.html#sobremi">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Proyectos</a>
+                    <div class="dropdown-content">
+                        <a href="komvous.html">Komvous</a>
+                        <a href="emilia.html">Emilia</a>
+                        <a href="dilab.html">Dilab</a>
+                        <a href="lisy.html">Lisy</a>
+                    </div>
+                </li>
+                <li><a href="main.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <index.html class="indeep">
-        <!-- Your index.html content goes here -->
+    <main class="indeep container">
         <section class="proyectcontent">
             <h2>Komvous</h2>
-            <h3>Komvous es una aplicación de picking que optimiza los procesos de recolección en almacenes. Como Product Designer, lideré la investigación, el diseño de la interfaz y la experiencia de usuario, asegurando una navegación intuitiva, eficiente y significativa.   </h3>
+            <h3>Komvous es una aplicación de picking que optimiza los procesos de recolección en almacenes. Como Product Designer, lideré la investigación, el diseño de la interfaz y la experiencia de usuario, asegurando una navegación intuitiva, eficiente y significativa.</h3>
             <div class="Objetivos">
                 <h4>Objetivos</h4>
                 <ul>
@@ -36,23 +46,22 @@
                     <li>Crear una interfaz de usuario intuitiva y fácil de usar.</li>
                 </ul>
             </div>
-            
         </section>
 
-        <section class="bannerproyecto" id="mi-imagen">
+        <section class="bannerproyecto">
+            <img src="Assets/komovuslogo.png" alt="Banner del proyecto Komvous" onclick="openImageModal(this)">
         </section>
 
         <section class="insights">
             <div class="top">
                 <h5>Insights</h5>
-                <h3>Se realizaron entrevistas y encuestas con gerentes de logística y operarios de almacén para comprender sus necesidades y desafíos. 
-                Ademas se observo como ocurría el proceso del picking</h3>
+                <h3>Se realizaron entrevistas y encuestas con gerentes de logística y operarios de almacén para comprender sus necesidades y desafíos. Además se observó cómo ocurría el proceso del picking.</h3>
             </div>
             <div class="insight">
                 <div>
-                  <img src="Assets/6086a526ce87dd603bd0017a_Shipping-Label-Share-Image 1.png" alt="Placeholder image">  
+                    <img src="Assets/6086a526ce87dd603bd0017a_Shipping-Label-Share-Image 1.png" alt="Etiquetado incorrecto" onclick="openImageModal(this)">
                 </div>
-               <div>
+                <div>
                     <h4>Etiquetado incorrecto</h4>
                     <p>A veces, tras preparar los pedidos, se colocan etiquetas que no cumplen con los estándares del cliente en pallets o cajas. Estas pueden contener un código de barras que no corresponde al que necesita el cliente para leerlo en sus instalaciones.</p>
                 </div>
@@ -60,107 +69,112 @@
             <div class="insight">
                 <div class="description">
                     <h4>Embalaje deficiente de productos</h4>
-                    <p> En industrias que consolidan diversos productos para su envío, se presentan descuidos en la disposición de los artículos más delicados en pallets o cajas. Un ejemplo notable de esto es la apilación  de productos de metal sobre los de vidrio.</p>
+                    <p>En industrias que consolidan diversos productos para su envío, se presentan descuidos en la disposición de los artículos más delicados en pallets o cajas. Un ejemplo notable de esto es la apilación de productos de metal sobre los de vidrio.</p>
                 </div>
                 <div>
-                  <img src="Assets/return_parcel_pallet_1622651200_6cbbaaaf_progressive 1.png" alt="Placeholder image">  
+                    <img src="Assets/return_parcel_pallet_1622651200_6cbbaaaf_progressive 1.png" alt="Embalaje deficiente de productos" onclick="openImageModal(this)">
                 </div>
-               
             </div>
             <div class="insight">
                 <div>
-                  <img src="Assets/5459A32F-DFE0-45DE-9CD1-D3604DB609B0_1_105_c 1.png" alt="Placeholder image">  
+                    <img src="Assets/5459A32F-DFE0-45DE-9CD1-D3604DB609B0_1_105_c 1.png" alt="Elegir productos incorrectos por similitud" onclick="openImageModal(this)">
                 </div>
-               <div>
-                    <h4>Elegir productos  incorrectos por similitud</h4>
+                <div>
+                    <h4>Elegir productos incorrectos por similitud</h4>
                     <p>Las empresas suelen almacenar productos visualmente similares, lo cual, durante el picking diario, puede conducir a selecciones erróneas. Esta confusión se debe a la rapidez requerida en estas operaciones y al parecido engañoso de los productos.</p>
                 </div>
             </div>
             <div class="insight">
-                 <div>
+                <div>
                     <h4>Rutas de picking ineficientes</h4>
-                    <p>La ineficiencia del recorrido durante el proceso de recolección de productos en el inventario. Este camino desordenado y extendido por diversos sectores para buscar el producto específico, significa un pérdida de tiempo..</p>
+                    <p>La ineficiencia del recorrido durante el proceso de recolección de productos en el inventario. Este camino desordenado y extendido por diversos sectores para buscar el producto específico, significa una pérdida de tiempo.</p>
                 </div>
                 <div>
-                  <img src="Assets/960AEF48-6788-4BCC-9D37-73845F3F083B_1_105_c 1.png" alt="Placeholder image">  
+                    <img src="Assets/960AEF48-6788-4BCC-9D37-73845F3F083B_1_105_c 1.png" alt="Rutas de picking ineficientes" onclick="openImageModal(this)">
                 </div>
-              
             </div>
         </section>
 
         <section class="process">
-           <div class="top">
+            <div class="top">
                 <h5>Proceso de Ideación</h5>
                 <h3>Se llevaron a cabo sprints de diseño con el fin de encontrar una solución que fuese viable, deseable y factible.</h3>
             </div>
-            <div class="image"> 
-                <img src="Assets/IDeacionKomvous.png" alt="Placeholder image">
+            <div class="image">
+                <img src="Assets/IDeacionKomvous.png" alt="Proceso de Ideación" onclick="openImageModal(this)">
             </div>
         </section>
         <section class="process">
             <div class="top">
-                 <h5>Sketching</h5>
-                 <h3>Se realizaron bocetos rápidos para explorar diferentes conceptos de diseño y distribución de la interfaz, permitiendo una lluvia de ideas visual y rápida.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/SketchingKomvous.png" alt="Placeholder image">
-             </div>
-         </section> 
-         <section class="process">
+                <h5>Sketching</h5>
+                <h3>Se realizaron bocetos rápidos para explorar diferentes conceptos de diseño y distribución de la interfaz, permitiendo una lluvia de ideas visual y rápida.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/SketchingKomvous.png" alt="Sketching" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Wireframes</h5>
-                 <h3>Se crearon wireframes (estructuras esquemáticas) para definir la jerarquía de contenido y la navegación de la aplicación, estableciendo una base sólida para el diseño.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/wirefrmekomvous.png" alt="Placeholder image">
-             </div>
-         </section> 
-         <section class="process">
+                <h5>Wireframes</h5>
+                <h3>Se crearon wireframes (estructuras esquemáticas) para definir la jerarquía de contenido y la navegación de la aplicación, estableciendo una base sólida para el diseño.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/wirefrmekomvous.png" alt="Wireframes" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5> Prototipo Mediana Fidelidad </h5>
-                 <h3>Se desarrollaron prototipos interactivos que simulaban la funcionalidad básica de la aplicación, permitiendo a los usuarios probar y dar feedback sobre el flujo de trabajo y la interacción.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/protmidkomvous.png" alt="Placeholder image">
-             </div>
-         </section>  
-         <section class="process">
+                <h5>Prototipo Mediana Fidelidad</h5>
+                <h3>Se desarrollaron prototipos interactivos que simulaban la funcionalidad básica de la aplicación, permitiendo a los usuarios probar y dar feedback sobre el flujo de trabajo y la interacción.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/protmidkomvous.png" alt="Prototipo Mediana Fidelidad" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Pruebas de Usabilidad</h5>
-                 <h3>Se realizaron pruebas con usuarios reales para evaluar la facilidad de uso, identificar problemas y recopilar información valiosa para mejorar el diseño.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/Testkomovus.png" alt="Placeholder image">
-             </div>
-         </section>  
-         <section class="process">
+                <h5>Pruebas de Usabilidad</h5>
+                <h3>Se realizaron pruebas con usuarios reales para evaluar la facilidad de uso, identificar problemas y recopilar información valiosa para mejorar el diseño.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/Testkomovus.png" alt="Pruebas de Usabilidad" onclick="openImageModal(this)">
+            </div>
+        </section>
+        <section class="process">
             <div class="top">
-                 <h5>Prototipo Alta Fidelidad</h5>
-                 <h3>Se creó un prototipo visualmente refinado y funcional que se asemejaba mucho al producto final, incorporando los comentarios de las pruebas de usabilidad y mejorando la estética general.</h3>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/Highkomovus.png" alt="Placeholder image">
-             </div>
-         </section>   
+                <h5>Prototipo Alta Fidelidad</h5>
+                <h3>Se creó un prototipo visualmente refinado y funcional que se asemejaba mucho al producto final, incorporando los comentarios de las pruebas de usabilidad y mejorando la estética general.</h3>
+            </div>
+            <div class="image">
+                <img src="Assets/Highkomovus.png" alt="Prototipo Alta Fidelidad" onclick="openImageModal(this)">
+            </div>
+        </section>
 
-         <section class="contacto" id="contacto">
+        <section class="contacto" id="contacto">
             <h2 class="contacto">¿Trabajamos juntos?</h2>
             <h3 class="contacto"><a href="mailto:nsalvons@gmail.com">nsalvons@gmail.com</a></h3>
             <div class="botonessociales">
                 <a href="https://www.linkedin.com/in/risalvo/">
                     <button><i class="fab fa-linkedin"></i></button>
                 </a>
-                <button><i class="fab fa-behance"></i> </button>
-                <a href="https://www.linkedin.com/in/risalvo/">
-                    <button><i class="fab fa-instagram"></i> </button>
+                <button><i class="fab fa-behance"></i></button>
+                <a href="https://www.instagram.com">
+                    <button><i class="fab fa-instagram"></i></button>
                 </a>
             </div>
         </section>
-    </index.html>
+    </main>
 
     <footer>
         <!-- Your footer content goes here -->
     </footer>
+
+    <!-- Modal for image display -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

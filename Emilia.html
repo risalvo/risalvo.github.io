@@ -10,122 +10,135 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="container">
+            <div class="logo">
                 <span>ns</span>
             </div>
-             <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="index.html#sobremi">Sobre mí</a></li>
-                 <li><a href="index.html#proyectos">Proyectos</a></li>
-                 <li><a href="index.html#contacto">Contacto</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="main.html#sobremi">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Proyectos</a>
+                    <div class="dropdown-content">
+                        <a href="komvous.html">Komvous</a>
+                        <a href="emilia.html">Emilia</a>
+                        <a href="dilab.html">Dilab</a>
+                        <a href="lisy.html">Lisy</a>
+                    </div>
+                </li>
+                <li><a href="main.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <index.html class="indeep">
-        <!-- Your index.html content goes here -->
+    <main class="indeep container">
         <section class="proyectcontent">
             <h2>Komvous</h2>
             <h3>Emilia es una plataforma web desarrollada en colaboración con Falabella para mejorar los procesos de planificación dentro de la gerencia de cadena de abastecimientos. Emilia automatiza varios procesos y estandariza todas las aplicaciones desarrolladas, estableciendo una identidad de diseño que optimiza los flujos y reduce la carga cognitiva en los procesos repetitivos.</h3>
             <div class="Objetivos">
                 <h4>Objetivos</h4>
-                <ul>   
-                    <li> Mejorar los procesos de planificación en la cadena de abastecimientos.</li>
-                    <li> Estandarizar aplicaciones y establecer una identidad de diseño</li>
-                    <li> Optimizar flujos y reducir la carga cognitiva en procesos repetitivos.</li>
+                <ul>
+                    <li>Mejorar los procesos de planificación en la cadena de abastecimientos.</li>
+                    <li>Estandarizar aplicaciones y establecer una identidad de diseño.</li>
+                    <li>Optimizar flujos y reducir la carga cognitiva en procesos repetitivos.</li>
                 </ul>
             </div>
-            
         </section>
 
         <section class="bannerproyecto">
-            <img src="Assets/banneremilia.png" alt="Placeholder image">
+            <img src="Assets/banneremilia.png" alt="Banner Emilia" onclick="openImageModal(this)">
         </section>
 
-
         <section class="process type2">
-           <div class="top type3">
+            <div class="top type3">
                 <h5>Tipografía</h5>
-                <p>Para la web, se busco una tipografía limpia y versátil que refleje la personalidad amigable y accesible de Emilia. Se eligio Montserrat, una tipografía moderna inspirada en la señalización urbana de Buenos Aires, que ofrece una estética geométrica y legible en diversos tamaños y formatos.
-
-                    Montserrat se adapta perfectamente a encabezados y texto de cuerpo, gracias a su variedad de pesos (Light, Regular, Medium, Semi-Bold y Bold). Esto nos permite crear una jerarquía visual clara y mantener un diseño equilibrado y atractivo en todas las plataformas.
-                    
-                    Para la visualización de números, se utilizo la tipografía IBM Plex Mono, que, al ser monoespaciada, facilita la lectura y comprensión de datos numéricos en tablas y otros contextos.</p>
+                <p>Para la web, se buscó una tipografía limpia y versátil que refleje la personalidad amigable y accesible de Emilia. Se eligió Montserrat, una tipografía moderna inspirada en la señalización urbana de Buenos Aires, que ofrece una estética geométrica y legible en diversos tamaños y formatos.</p>
+                <p>Montserrat se adapta perfectamente a encabezados y texto de cuerpo, gracias a su variedad de pesos (Light, Regular, Medium, Semi-Bold y Bold). Esto nos permite crear una jerarquía visual clara y mantener un diseño equilibrado y atractivo en todas las plataformas.</p>
+                <p>Para la visualización de números, se utilizó la tipografía IBM Plex Mono, que, al ser monoespaciada, facilita la lectura y comprensión de datos numéricos en tablas y otros contextos.</p>
             </div>
-            <div class="image "> 
-                <img src="Assets/typoemilia.png" alt="Placeholder image">
+            <div class="image">
+                <img src="Assets/typoemilia.png" alt="Tipografía Emilia" onclick="openImageModal(this)">
             </div>
         </section>
+
         <section class="process type2">
-            <div class="image"> 
-                <img src="Assets/iconosemilia.png" alt="Placeholder image">
+            <div class="image">
+                <img src="Assets/iconosemilia.png" alt="Íconos Emilia" onclick="openImageModal(this)">
             </div>
             <div class="top type3">
-                 <h5>Iconos</h5>
-                 <p> Los íconos desempeñan un papel crucial como guías visuales para los usuarios. Se eligió la biblioteca de íconos Feather por su simplicidad, claridad y capacidad para complementar el lenguaje visual general de nuestro diseño.
+                <h5>Iconos</h5>
+                <p>Los íconos desempeñan un papel crucial como guías visuales para los usuarios. Se eligió la biblioteca de íconos Feather por su simplicidad, claridad y capacidad para complementar el lenguaje visual general de nuestro diseño.</p>
+                <p>Se priorizó un conjunto de íconos simple porque los íconos detallados pueden aumentar la carga cognitiva. Se enfocó en la simplicidad para ayudar a los usuarios a comprender rápidamente el concepto que representa cada ícono y reconocerlos fácilmente en pantallas más pequeñas.</p>
+            </div>
+        </section>
 
-                    Se priorizo un conjunto de íconos simple porque los íconos detallados pueden aumentar la carga cognitiva. Se enfoco en la simplicidad para ayudar a los usuarios a comprender rápidamente el concepto que representa cada ícono y reconocerlos fácilmente en pantallas más pequeñas..</p>
-             </div>
-            
-         </section> 
-         <section class="process type2">
-            <div class="top type3" >
-                 <h5>Colores</h5>
-                 <p>En el diseño de Emilia, se da una gran importancia a la comunicación clara que a la estética del color. Los colores en Emilia complementan el propósito del contenido, comunicando jerarquía de información, estados interactivos y diferencias entre elementos distintos. 
+        <section class="process type2">
+            <div class="top type3">
+                <h5>Colores</h5>
+                <p>En el diseño de Emilia, se da una gran importancia a la comunicación clara más que a la estética del color. Los colores en Emilia complementan el propósito del contenido, comunicando jerarquía de información, estados interactivos y diferencias entre elementos distintos.</p>
+                <p>Los colores deben tener un significado y seleccionarse de manera intencional, no basados en preferencias personales. En Emilia, cada color tiene un rol asignado con un significado específico basado en su función dentro de la interfaz.</p>
+                <p>Definir los roles de los colores facilita las modificaciones y personalizaciones futuras, extendiendo el sistema de colores para funcionar en múltiples puntos de contacto.</p>
+            </div>
+            <div class="image">
+                <img src="Assets/coloresemilia.png" alt="Colores Emilia" onclick="openImageModal(this)">
+            </div>
+        </section>
 
-                    Los colores deben tener un significado y seleccionarse de manera intencional, no basados en preferencias personales. En Emilia, cada color tiene un rol asignado con un significado específico basado en su función dentro de la interfaz. 
-                    
-                    Definir los roles de los colores facilita las modificaciones y personalizaciones futuras, extendiendo el sistema de colores para funcionar en múltiples puntos de contacto.</p>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/coloresemilia.png" alt="Placeholder image">
-             </div>
-         </section> 
-         </section>  
-         <section class="process">
+        <section class="process">
             <div class="top">
-                 <h5>Botones</h5>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/botonesemilia.png" alt="Placeholder image">
-             </div>
-         </section>  
-         <section class="process">
-            <div class="top">
-                 <h5>Fields</h5>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/feildsemilia.png" alt="Placeholder image">
-             </div>
-         </section>   
-         <section class="process">
-            <div class="top">
-                 <h5>Módulos</h5>
-             </div>
-             <div class="image"> 
-                 <img src="Assets/modulosemilia.png" alt="Placeholder image">
-             </div>
-         </section>   
+                <h5>Botones</h5>
+            </div>
+            <div class="image">
+                <img src="Assets/botonesemilia.png" alt="Botones Emilia" onclick="openImageModal(this)">
+            </div>
+        </section>
 
-         <section class="contacto" id="contacto">
+        <section class="process">
+            <div class="top">
+                <h5>Fields</h5>
+            </div>
+            <div class="image">
+                <img src="Assets/feildsemilia.png" alt="Fields Emilia" onclick="openImageModal(this)">
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="top">
+                <h5>Módulos</h5>
+            </div>
+            <div class="image">
+                <img src="Assets/modulosemilia.png" alt="Módulos Emilia" onclick="openImageModal(this)">
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
             <h2 class="contacto">¿Trabajamos juntos?</h2>
             <h3 class="contacto"><a href="mailto:nsalvons@gmail.com">nsalvons@gmail.com</a></h3>
             <div class="botonessociales">
                 <a href="https://www.linkedin.com/in/risalvo/">
                     <button><i class="fab fa-linkedin"></i></button>
                 </a>
-                <button><i class="fab fa-behance"></i> </button>
-                <a href="https://www.linkedin.com/in/risalvo/">
-                    <button><i class="fab fa-instagram"></i> </button>
+                <button><i class="fab fa-behance"></i></button>
+                <a href="https://www.instagram.com">
+                    <button><i class="fab fa-instagram"></i></button>
                 </a>
             </div>
         </section>
-    </index.html>
+    </main>
 
     <footer>
         <!-- Your footer content goes here -->
     </footer>
+
+    <!-- Modal for image display -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
